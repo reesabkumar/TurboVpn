@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.northghost.hydraclient">
+    <!--package="com.northghost.hydraclient"-->
+<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:name="com.rvtech.turbovpn.vpn.MainApplication"
+
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning,Instantiatable">
+        <activity android:name="com.rvtech.turbovpn.vpn.activity.ServersActivity"></activity>
+        <activity android:name="com.rvtech.turbovpn.vpn.activity.PaidServerSubscriptionActivity" />
+        <activity android:name="com.rvtech.turbovpn.vpn.activity.AdsSubscriptionActivity" />
+        <activity android:name="com.rvtech.turbovpn.vpn.activity.SpeedTest" />
+        <activity android:name="com.rvtech.turbovpn.vpn.activity.PurchasesActivity" />
+        <activity
+            android:name="com.rvtech.turbovpn.vpn.activity.SplashActivity"
+            android:theme="@style/splashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rvtech.turbovpn.vpn.activity.About" />
+        <activity android:name="com.rvtech.turbovpn.vpn.activity.SettingsActivity" />
+        <activity android:name="com.rvtech.turbovpn.vpn.activity.Faq" /> <!-- google ads -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <activity android:name="com.rvtech.turbovpn.vpn.activity.MainActivity" />
+    </application>
+
+</manifest>

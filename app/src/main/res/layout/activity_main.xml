@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_main_new_background"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context="com.rvtech.turbovpn.vpn.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ToolbarTheme"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/drawer_opener"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="15dp"
+                android:src="@drawable/drawer_opener_icon" />
+
+            <ImageView
+                android:id="@+id/share_app_link"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:layout_toLeftOf="@+id/go_pro"
+                android:src="@drawable/ic_menu_share"
+                android:visibility="visible"
+
+                />
+
+            <ImageView
+                android:id="@+id/go_pro"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="15dp"
+                android:src="@drawable/ic_crown"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:text="@string/app_name"
+            android:textColor="#424141"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/card_background"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Upload"
+                        android:textColor="#3D3D3D" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/uploading_speed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:text="0"
+                            android:textColor="#3D3D3D"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/uploading_graph"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        app:lottie_autoPlay="false"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/graph_movement_blue"
+                        app:lottie_speed="0.65" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/card_background"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Download"
+                        android:textColor="#3D3D3D" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/downloading_speed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:text="0"
+                            android:textColor="#3D3D3D"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/downloading_graph"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        app:lottie_autoPlay="false"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/graph_movement_green"
+                        app:lottie_speed="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!--                    android:elevation="6dp"-->
+        <RelativeLayout
+            android:id="@+id/vpn_select_country"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/card_background"
+            >
+
+            <ImageView
+                android:id="@+id/vpn_country_image"
+                android:layout_width="44dp"
+                android:layout_height="26dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/select_flag_image" />
+
+            <TextView
+                android:id="@+id/vpn_country_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/vpn_country_image"
+                android:text="Select Country"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/vpn_select_country1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_expand" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fl_adplaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <com.rvtech.turbovpn.vpn.nativeTemplete.TemplateView
+                android:id="@+id/adview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:gnt_template_type="@layout/native_ad_custom_design"
+                />
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/mainadView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner">
+            </com.google.android.gms.ads.AdView>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/speed_test_block"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_margin="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:elevation="15dp"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:background="@drawable/card_background"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="6dp"
+                        android:src="@drawable/ic_thunder_icon" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:visibility="gone"
+                        android:id="@+id/vpn_speed_test"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="true"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/speed_test"
+                        app:lottie_speed="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vpn_connection_block"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="15dp"
+                    android:elevation="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/card_background"
+                    >
+
+                    <ImageView
+                        android:id="@+id/connect_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_connect_vpn" />
+                </LinearLayout>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/vpn_connecting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="gone"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/vpn_loading"
+                    app:lottie_speed="1" />
+
+                <LinearLayout
+                    android:id="@+id/connection_time_block"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/vpn_connection_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:textColor="#414141"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/vpn_connection_time_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Connection Time"
+                        android:textColor="#818080"
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <com.skyfishjy.library.RippleBackground
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:id="@+id/content_ripple"
+                    app:rb_color="#62EDBB"
+                    app:rb_radius="30dp"
+                    android:layout_below="@+id/vpn_connection_block"
+                    app:rb_rippleAmount="4"
+                    app:rb_duration="3000"
+                    app:rb_scale="6"
+                    />
+
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_below="@+id/vpn_connection_block"
+                    >
+
+                    <ImageView
+                        android:id="@+id/vpn_world_animation"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:src="@drawable/ic_vpn_world_mine"
+                        android:layout_centerInParent="true" />
+
+                    <View
+                        android:id="@+id/center_horizontal_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerInParent="true" />
+
+                    <RelativeLayout
+                        android:id="@+id/ripple1_block"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_toRightOf="@+id/center_horizontal_view"
+                        android:layout_above="@+id/center_horizontal_view"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        >
+                        <com.skyfishjy.library.RippleBackground
+                            android:id="@+id/Ripple_point1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:rb_color="@color/white"
+                            app:rb_radius="6dp"
+                            app:rb_rippleAmount="3"
+                            app:rb_duration="3000"
+                            app:rb_scale="6">
+                        </com.skyfishjy.library.RippleBackground>
+                        <ImageView
+                            android:id="@+id/point1"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/card_background"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ripple2_block"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_toLeftOf="@+id/center_horizontal_view"
+                        android:layout_below="@+id/center_horizontal_view"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginTop="5dp"
+                        >
+                        <com.skyfishjy.library.RippleBackground
+                            android:id="@+id/Ripple_point2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:rb_color="@color/white"
+                            app:rb_radius="6dp"
+                            app:rb_rippleAmount="3"
+                            app:rb_duration="3000"
+                            app:rb_scale="6">
+                        </com.skyfishjy.library.RippleBackground>
+                        <ImageView
+                            android:id="@+id/point2"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/card_background"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ripple3_block"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_toRightOf="@+id/center_horizontal_view"
+                        android:layout_below="@+id/center_horizontal_view"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_marginTop="-10dp"
+                        >
+                        <com.skyfishjy.library.RippleBackground
+                            android:id="@+id/Ripple_point3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:rb_color="@color/white"
+                            app:rb_radius="6dp"
+                            app:rb_rippleAmount="3"
+                            app:rb_duration="3000"
+                            app:rb_scale="6">
+                        </com.skyfishjy.library.RippleBackground>
+                        <ImageView
+                            android:id="@+id/point3"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/card_background"
+                            />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/connection_details_block"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/ripple3_block"
+                        android:layout_toRightOf="@id/ripple3_block"
+                        android:layout_marginLeft="-30dp"
+                        android:layout_marginBottom="-20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/message_design_background"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="6dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="8dp">
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center_horizontal"
+                                />
+                            <TextView
+                                android:id="@+id/selected_server"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Country Name"
+                                android:textColor="#000"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/connection_state"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Connection State"
+                                android:textColor="#00DB93"
+                                />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_message_bottom" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

@@ -1,0 +1,154 @@
+<resources>
+    <!--change App Name-->
+    <string name="app_name">Turbo VPN</string>
+    <!--END change App Name-->
+
+    <!--change App version-->
+    <string name="current_app_version">Version 3.0</string>
+    <!--End change App version-->
+
+    <string name="vpn_process_name" translatable="false">:my.custom.vpn.process.name</string>
+    <string name="vpn_provider_authorities" translatable="false">com.anchorfree.hydrasdk.app.demo</string>
+
+    <string name="log_in">LOGIN</string>
+    <string name="log_out">LOGOUT</string>
+    <string name="connect">CONNECT</string>
+    <string name="disconnect">DISCONNECT</string>
+    <string name="optimal_server">OPTIMAL SERVER</string>
+    <string name="unknown">UNKNOWN</string>
+
+    <string name="devices_exceed">Available device count is exceed. Please consider upgrading your subscription.</string>
+    <string name="sessions_exceed">Available active session count is exceed. Please consider upgrading your subscription.</string>
+
+    <string name="version">Version</string>
+    <string name="app_error">Application error</string>
+    <string name="no_data">No data</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="account_type">Account Type</string>
+    <string name="activated_devices">Activated Devices</string>
+    <string name="account">Account</string>
+    <string name="signin_error">Unable to sign in</string>
+    <string name="no_network">Unable to connect to server. Check your Internet connection.</string>
+    <string name="online_devices">Online Devices</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="vpn_server_location">VPN Server Location</string>
+    <string name="vpn_node">VPN Node</string>
+    <string name="legal_information">Legal Information</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_service">Terms of Service</string>
+
+    <string name="logged_in">Logged in</string>
+    <string name="logged_out">Logged out</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+
+    <string name="host_url_title">Host Url: </string>
+    <string name="carrier_id_title">Carrier ID: </string>
+    <string name="confirm">CONFIRM</string>
+
+    <string name="traffic_stats">UL: %1$s, DL: %2$s </string>
+    <string name="traffic_limit">%1$s of %2$s available</string>
+    <string name="traffic_unlimited">UNLIMITED</string>
+
+    <string name="current_server">CURRENT_SERVER</string>
+    <string name="connecting">Connecting</string>
+    <string name="paused">Paused</string>
+
+    <!--user's personalization-->
+    <bool name="ads_flag">true</bool>
+
+    <!--google admob keysmine-->
+    <string name="admob_app_id">ca-app-pub-3505242406261127~3466651925</string>//mine app id
+    <string name="admob_native_advance">ca-app-pub-3505242406261127/5842983924</string>
+    <string name="admob_interstitial">ca-app-pub-3505242406261127/7214325245</string>
+    <string name="banner">ca-app-pub-3505242406261127/8527406916</string>
+
+    <!--END google admob keys-->
+
+    <!--facebook native banner placement id-->
+    <string name="fb_native_banner_id">1021068675078122_1021072415077748D</string>
+    <!--END facebook native banner placement id-->
+
+    <!--Change Privacy Policy URL-->
+    <string name="privacy_policy_link">https://sites.google.com/view/turbovpnplus/home</string>
+    <!--END Change Privacy Policy URL-->
+
+    <!--Help to improve us-->
+    <string name="developer_email">rvtechclub@gmail.com</string>
+    <!--END Help to improve us-->
+
+    <!--Drawer opener and closer    -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!--Drawer opener and closer    -->
+
+    <string name="help_to_improve_us_email_subject">Suggestions &amp; Comments</string>
+    <string name="help_to_improve_us_body">Please write down your comments below this line.</string>
+    <!--Help to improve us-->
+
+    <!--rating dialog-->
+    <string name="rating_dialog_details">How was your experience\nwith us?</string>
+    <string name="feedback_email_subject">Turbo VPN App Feedback</string>
+    <!--rating dialog-->
+
+    <!--FAQ QUESTION DETAILS -->
+    <!--QUESTIONS-->
+    <string name="question1">1. How to use Turbo VPN?</string>
+    <string name="question2">2. How long can I use Turbo VPN for each connection?</string>
+    <string name="question3">3. Why "can't" I use internet after connection established?</string>
+    <string name="question4">4. How to disable battery optimization for Turbo VPN?</string>
+    <string name="question5">5. What is Smart Proxy?</string>
+    <string name="question6">6. When I try to connect, Android system request a permission, but I can not accept it, why?</string>
+
+    <!--ANSWERS-->
+    <string name="question1_answer">Click connect button in the main screen to use Turbo VPN. If Android system show a dialog to request a connection permission, click OK or Accept to continue.</string>
+    <string name="question2_answer">As long as you can. We don/t set time or traffic limition on each connection</string>
+    <string name="question3_answer">Fist of all, check your network connection. Then make sure "you've" disabled battery optimization for Turbo VPN in "Android's" battery setting (which means enable background activity for Turbo VPN). If you enable Smart Proxy, you also need to make sure all the apps you need to proxy is checked in Smart Proxy setting.</string>
+    <string name="question4_answer" />
+    <string name="question5_answer">On Android 5.0 or above, you can only enable some of the apps to use Turbo VPN to proxy traffic, and all the other apps use local network. For example, if Facebook and Skype are blocked in your country, make them checked in Smart Proxy. After the VPN connection is established, only Facebook and "Skype's" traffic go through VPN, and all your other apps will perform as good as usual.</string>
+    <string name="question6_answer">You may be running some app which changes the screen color or opens a floating window. "Android's" security system prevent VPN to be running under these cases. You need close this kind of app temporarily to continue.</string>
+    <!--END FAQ QUESTION DETAILS-->
+
+    <!--    About us text details-->
+    <string name="Aboutus_page_Text">Turbo VPN is new and Enhanced with Several Security Upgrades. Our Aim to Provide best VPN service to our customers. Turbo VPN is also Super Secure VPN with Unlimited Proxy Server for lifetime free access. Unlock any websites save your device
+    Turbo VPN is the most trusted security, privacy and access platform with top performance on speed, stability and security to unblock sites, unblock any apps or websites, access social networks, watch videos and movies, protect Wi-Fi hotspot security and protect privacy</string>
+
+    <!--Remove Ads subscription dialog text-->
+    <string name="main_title">Select Subscription</string>
+    <string name="first_option">Remove ads (9.99$/Month)</string>
+    <string name="second_option">Remove ads (23.97$/3 Months)</string>
+    <string name="third_option">Remove ads (41.94$/6 Months)</string>
+    <string name="forth_option">Remove ads (59.88$/Yearly)</string>
+    <!--END Remove Ads subscription dialog text-->
+
+
+    <!--VIP servers subscription dialog text-->
+    <string name="vip_main_title">Select Subscription</string>
+    <string name="vip_first_option">Unlock VIP Servers (9.99$/Month)</string>
+    <string name="vip_second_option">Unlock VIP Servers (23.97$/3 Months)</string>
+    <string name="vip_third_option">Unlock VIP Servers (41.94$/6 Months)</string>
+    <string name="vip_forth_option">Unlock VIP Servers (59.88$/Yearly)</string>
+    <!--END VIP servers subscription dialog text-->
+
+    <!--Drawer buttons text-->
+    <string name="home">Home</string>
+    <string name="login">Login</string>
+    <string name="purchases">Get Premium</string>
+    <string name="share">Tell your friend</string>
+    <string name="policy">Privacy Policy</string>
+    <string name="rate">Rate Us</string>
+    <string name="about">About</string>
+    <string name="help">Help us to improve</string>
+    <string name="faq">FAQ</string>
+    <string name="settings">Settings</string>
+    <string name="country_selection">Select Country</string>
+    <string name="SAVE">SAVE</string>
+    <!--END Drawer buttons text-->
+
+    <!--In-app purchase Policy text-->
+    <string name="subscription_policy">Recurring billing, Cancel anytime on Google Play Store.</string>
+    <!--END In-app purchase Policy text-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

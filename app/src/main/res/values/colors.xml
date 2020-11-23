@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+
+    <item name="primary" type="color">#2FA6F8</item>
+    <item name="primary_dark" type="color">#2479b5</item>
+    <item name="primary_light" type="color">#2FA6F8</item>
+    <item name="light_blue" type="color">#A8D3F5</item>
+
+
+    <item name="text_color" type="color">#000</item>
+    <item name="white_color" type="color">#fff</item>
+
+    <item name="yellow_color" type="color">#FFEB3B</item>
+
+    <item name="ad_yellow_color" type="color">#FFCE17</item>
+
+    <color name="grey_5">#f2f2f2</color>
+    <color name="light_blue_50">#E1F5FE</color>
+
+    <color name="gnt_test_background_color">#00F4F4F4</color>
+    <color name="gnt_test_background_color_2">#00A3A3A3</color>
+    <color name="gnt_black">#000000</color>
+    <color name="gnt_white">#FFFFFF</color>
+    <color name="gnt_red">#FF0000</color>
+    <color name="gnt_green">#00FF00</color>
+    <color name="gnt_blue">#4285f4</color>
+    <color name="gnt_ad_green">#3A6728</color>
+    <color name="gnt_gray">#808080</color>
+    <color name="gnt_outline">#E0E0E0</color>
+
+
+
+
+    <color name="grey_3">#f7f7f7</color>
+    <color name="grey_51">#f2f2f2</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_80">#37474F</color>
+    <color name="grey_90">#263238</color>
+</resources>
